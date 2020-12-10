@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme: Theme) =>
 )
 
 export default function Login({ setIdentity, lastDomain, onComplete, ...props }) {
-  const [state, setState] = useState({ serverAddress: lastDomain, id: undefined, password: undefined })
+  const [state, setState] = useState({ serverAddress: "api.mindhaven.me", id: undefined, password: undefined })
   const [srcLocked, setSrcLocked] = useState(false)
   const [tryitMenu, setTryitMenu] = useState<Element>()
   const [helpMenu, setHelpMenu] = useState<Element>()
@@ -184,7 +184,7 @@ export default function Login({ setIdentity, lastDomain, onComplete, ...props })
                   variant="outlined"
                   style={{ width: "100%", height: 90 }}
                   // label="Domain"
-                  placeholder="api.lamp.digital"
+                  placeholder="api.mindhave.me"
                   helperText="Don't enter a domain if you're not sure what this option does."
                   value={state.serverAddress || ""}
                   onChange={handleChange}
