@@ -184,7 +184,7 @@ export default function Login({ setIdentity, lastDomain, onComplete, ...props })
                   variant="outlined"
                   style={{ width: "100%", height: 90 }}
                   // label="Domain"
-                  placeholder="api.mindhave.me"
+                  placeholder="api.mindhaven.me"
                   helperText="Don't enter a domain if you're not sure what this option does."
                   value={state.serverAddress || ""}
                   onChange={handleChange}
